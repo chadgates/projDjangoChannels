@@ -1,0 +1,7 @@
+    {% extends "base.html" %}
+    {% load staticfiles %}
+
+    {% block extrajavascript %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.min.js"></script>
+        <script src="{% static 'chat/js/chat.js' %}"></script>
+    {% endblock extrajavascript %}
